@@ -91,12 +91,14 @@ body {
   left: 20px;
   bottom: 20px;
 }
+
 .more-pens .bottom-right{
   right: 20px;
   bottom: 20px;
   position:fixed;
   cursor: pointer;
 }
+
 .more-pens .top-left{
   left: 20px;
   top: 20px;
@@ -106,6 +108,7 @@ body {
   right: 20px;
   top: 20px;
   position:fixed;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
 }
 a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
   font-family: "Quicksand", Arial, sans-serif;
@@ -149,7 +152,7 @@ body {
   margin: 0;
   line-height: 1;
   color: #EEEEEE;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position:fixed;
 }
 
@@ -191,7 +194,7 @@ input, textarea{
   width: 100%;
   background: transparent;
   margin-top: 4px;
-  color: white;
+  color: #FF5E4C;
   font-size: 15px;
   border-radius: 5px;
   padding: 5px;
@@ -212,6 +215,46 @@ input, textarea{
   background: #f7f7f7;
 }
 
+/* Light Mode */
+.light-mode{
+background-color: #f7f7f7 ;
+color: #212121;
+}
+
+.light-mode h3{
+  color: #212121;
+}
+.light-mode a{
+  color: #212121;
+}
+.light-mode img{
+ 
+  border: 6px solid #212121;
+
+}
+a.light-mode, a.light-mode:link, a.light-mode:visited, a.light-mode:active {
+  background: #f7f7f7 !important;
+  color: #212121 !important;
+}
+a.light-mode:hover, a.light-mode:link:hover, a.light-mode:visited:hover, a.light-mode:active:hover{
+  color: #edf3f8 !important;
+  background: #212121 !important;
+}
+
+
+ a.switchbuttons{
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  background: #edf3f8;
+  color: #212121;
+  padding: 4px 8px;
+}
+
+/* a#darkbutton:hover, a#darkbutton:link:hover, a#darkbutton:visited:hover, a#darkbutton:active:hover{
+  background: #212121;
+  color: #edf3f8;
+} */
 
 /* Responsive */
 
@@ -234,6 +277,7 @@ input, textarea{
   .top-right{
     right: 1px !important;
   }
+ 
   #projects{
     background-color: rgba(0,0,0,0.9);
     height: 80%;
